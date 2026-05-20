@@ -85,3 +85,4 @@ c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\refint\BlazorApp2.
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.pdb
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.genruntimeconfig.cache
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\ref\BlazorApp2.dll
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.sourcelink.json

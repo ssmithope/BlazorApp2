@@ -1,0 +1,60 @@
+@page "/menu"
+@using System.Globalization
+@attribute [StreamRendering]
+
+<PageTitle>Pizza Menu</PageTitle>
+
+<h1>Pizza Menu</h1>
+
+<p>All prices shown in Haitian Gourdes (HTG).</p>
+
+@if (pizzas == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Pizza Name</th>
+                <th>Price (HTG)</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pizza in pizzas)
+            {
+                <tr>
+                    <td>@pizza.Name</td>
+                    <td>@pizza.Price.ToString("C", CultureInfo.GetCultureInfo("fr-HT"))</td>
+                    <td>@pizza.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Pizza>? pizzas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(300);
+
+        pizzas = new List<Pizza>
+        {
+            new Pizza { Name = "Pepperoni", Price = 450, Description = "Classic pepperoni with cheese" },
+            new Pizza { Name = "Hawaiian", Price = 500, Description = "Ham, pineapple, and cheese" },
+            new Pizza { Name = "Veggie", Price = 400, Description = "Fresh vegetables and herbs" },
+            new Pizza { Name = "Cheese Lovers", Price = 350, Description = "Three-cheese blend" }
+        };
+    }
+
+    private class Pizza
+    {
+        public string Name { get; set; } = "";
+        public decimal Price { get; set; }
+        public string Description { get; set; } = "";
+    }
+}
