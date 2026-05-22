@@ -1,0 +1,29 @@
+.order-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.order-preview {
+    text-align: center;
+}
+
+.preview-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+}
+
+.order-message {
+    font-weight: bold;
+    color: green;
+}

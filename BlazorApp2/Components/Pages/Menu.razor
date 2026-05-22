@@ -17,6 +17,7 @@ else
     <table class="table">
         <thead>
             <tr>
+                <th>Image</th>
                 <th>Pizza Name</th>
                 <th>Price (HTG)</th>
                 <th>Description</th>
@@ -26,6 +27,9 @@ else
             @foreach (var pizza in pizzas)
             {
                 <tr>
+                    <td>
+                        <img src="@pizza.ImageUrl" alt="@pizza.Name" class="menu-img" />
+                    </td>
                     <td>@pizza.Name</td>
                     <td>@pizza.Price.ToString("C", CultureInfo.GetCultureInfo("fr-HT"))</td>
                     <td>@pizza.Description</td>
@@ -44,10 +48,10 @@ else
 
         pizzas = new List<Pizza>
         {
-            new Pizza { Name = "Pepperoni", Price = 450, Description = "Classic pepperoni with cheese" },
-            new Pizza { Name = "Hawaiian", Price = 500, Description = "Ham, pineapple, and cheese" },
-            new Pizza { Name = "Veggie", Price = 400, Description = "Fresh vegetables and herbs" },
-            new Pizza { Name = "Cheese Lovers", Price = 350, Description = "Three-cheese blend" }
+            new Pizza { Name = "Pepperoni", Price = 450, Description = "Classic pepperoni with cheese", ImageUrl = "images/pepperoni.jpg" },
+            new Pizza { Name = "Hawaiian", Price = 500, Description = "Ham, pineapple, and cheese", ImageUrl = "images/hawaiian.jpg" },
+            new Pizza { Name = "Veggie", Price = 400, Description = "Fresh vegetables and herbs", ImageUrl = "images/veggie.jpg" },
+            new Pizza { Name = "Cheese Lovers", Price = 350, Description = "Three-cheese blend", ImageUrl = "images/cheese.jpg" }
         };
     }
 
@@ -56,5 +60,6 @@ else
         public string Name { get; set; } = "";
         public decimal Price { get; set; }
         public string Description { get; set; } = "";
+        public string ImageUrl { get; set; } = "";
     }
 }

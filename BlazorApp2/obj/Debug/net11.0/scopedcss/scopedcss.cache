@@ -1,3 +1,6 @@
 Components\Layout\MainLayout.razor.css=b-2vf97p5uii
 Components\Layout\NavMenu.razor.css=b-g80w8ngysh
 Components\Layout\ReconnectModal.razor.css=b-7hgjwicnbn
+Components\Pages\Home.razor.css=b-htfjgjh3vn
+Components\Pages\Menu.razor.css=b-z76ue8nrqf
+Components\Pages\Order.razor.css=b-fazszj5xao

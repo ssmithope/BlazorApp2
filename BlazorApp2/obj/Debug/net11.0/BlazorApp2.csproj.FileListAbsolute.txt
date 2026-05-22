@@ -73,8 +73,6 @@ c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\qwevw5z
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\9lmi2to54l-{0}-abdmv1u4y3-abdmv1u4y3.gz
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\l7k1t0s1c2-{0}-6rjll45mpu-6rjll45mpu.gz
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\46ortvw2k1-{0}-4ydj1pqe10-4ydj1pqe10.gz
-c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\9y60nfedcw-{0}-9brf83bnd4-9brf83bnd4.gz
-c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\dqrlejl56i-{0}-9brf83bnd4-9brf83bnd4.gz
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\staticwebassets.build.json
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\staticwebassets.build.json.cache
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\staticwebassets.development.json
@@ -86,3 +84,8 @@ c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.pdb
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.genruntimeconfig.cache
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\ref\BlazorApp2.dll
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.sourcelink.json
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\scopedcss\Components\Pages\Menu.razor.rz.scp.css
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\scopedcss\Components\Pages\Order.razor.rz.scp.css
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\9y60nfedcw-{0}-yawrlx1p4c-yawrlx1p4c.gz
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\dqrlejl56i-{0}-yawrlx1p4c-yawrlx1p4c.gz

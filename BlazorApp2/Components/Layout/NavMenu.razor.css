@@ -89,6 +89,17 @@
     display: block;
 }
 
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
 @media (min-width: 641px) {
     .navbar-toggler {
         display: none;

@@ -1,0 +1,29 @@
+.order-container[b-fazszj5xao] {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.order-form[b-fazszj5xao] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.order-preview[b-fazszj5xao] {
+    text-align: center;
+}
+
+.preview-img[b-fazszj5xao] {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+}
+
+.order-message[b-fazszj5xao] {
+    font-weight: bold;
+    color: green;
+}

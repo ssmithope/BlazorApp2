@@ -1,7 +1,14 @@
 ﻿@page "/"
+@attribute [StreamRendering]
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Smith's Pizza</PageTitle>
 
-<h1>Welcome to Smith's Blazor App!</h1>
+<h1>Welcome to Smith's Pizza!</h1>
+<p>Fresh, hot pizza made with love in Haiti.</p>
 
-Welcome to your new app.
+<img src="images/hero-pizza.jpg" alt="Delicious pizza" class="hero" />
+
+<p>
+    Explore our <NavLink href="menu">Pizza Menu</NavLink> or
+    <NavLink href="order">place an order</NavLink>.
+</p>
