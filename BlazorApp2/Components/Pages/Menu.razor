@@ -1,65 +1,63 @@
 @page "/menu"
-@using System.Globalization
 @attribute [StreamRendering]
 
 <PageTitle>Pizza Menu</PageTitle>
 
-<h1>Pizza Menu</h1>
+<h1 class="menu-title">Blazing Pizza</h1>
 
-<p>All prices shown in Haitian Gourdes (HTG).</p>
+<div class="menu-container">
+    <div class="menu-grid">
+        @foreach (var pizza in pizzas)
+        {
+            <div class="pizza-card">
+                <img src="@pizza.ImageUrl" alt="@pizza.Name" class="pizza-img" />
+                <div class="pizza-info">
+                    <h3>@pizza.Name</h3>
+                    <p>@pizza.Description</p>
+                    <span class="price">@pizza.Price.ToString("C")</span>
+                    <button class="btn btn-danger" @onclick="() => AddToOrder(pizza)">Add to Order</button>
+                </div>
+            </div>
+        }
+    </div>
 
-@if (pizzas == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Pizza Name</th>
-                <th>Price (HTG)</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var pizza in pizzas)
-            {
-                <tr>
-                    <td>
-                        <img src="@pizza.ImageUrl" alt="@pizza.Name" class="menu-img" />
-                    </td>
-                    <td>@pizza.Name</td>
-                    <td>@pizza.Price.ToString("C", CultureInfo.GetCultureInfo("fr-HT"))</td>
-                    <td>@pizza.Description</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+    <div class="order-panel">
+        <h3>Your Order</h3>
+        @if (order.Count == 0)
+        {
+            <p>No items yet.</p>
+        }
+        else
+        {
+            <ul>
+                @foreach (var item in order)
+                {
+                    <li>@item.Name - @item.Price.ToString("C")</li>
+                }
+            </ul>
+            <p class="total">Total: @order.Sum(p => p.Price).ToString("C")</p>
+            <button class="btn btn-primary">Pay @order.Sum(p => p.Price).ToString("C")</button>
+        }
+    </div>
+</div>
 
 @code {
-    private List<Pizza>? pizzas;
-
-    protected override async Task OnInitializedAsync()
+    private List<Pizza> pizzas = new()
     {
-        await Task.Delay(300);
+        new Pizza("Buffalo Chicken", "images/buffalo.jpg", 19.95m, "Spicy chicken with buffalo sauce"),
+        new Pizza("The Bacon Cheese", "images/bacon.jpg", 19.95m, "Loaded with bacon and cheese"),
+        new Pizza("Veggie Delight", "images/veggie.jpg", 19.95m, "Fresh vegetables and herbs"),
+        new Pizza("Classic Pepperoni", "images/pepperoni.jpg", 19.95m, "Traditional pepperoni and cheese"),
+        new Pizza("Black Cherry Pizza", "images/cherry.jpg", 19.95m, "Sweet and savory cherry topping"),
+        new Pizza("Margherita", "images/margherita.jpg", 19.95m, "Tomato, mozzarella, and basil")
+    };
 
-        pizzas = new List<Pizza>
-        {
-            new Pizza { Name = "Pepperoni", Price = 450, Description = "Classic pepperoni with cheese", ImageUrl = "images/pepperoni.jpg" },
-            new Pizza { Name = "Hawaiian", Price = 500, Description = "Ham, pineapple, and cheese", ImageUrl = "images/hawaiian.jpg" },
-            new Pizza { Name = "Veggie", Price = 400, Description = "Fresh vegetables and herbs", ImageUrl = "images/veggie.jpg" },
-            new Pizza { Name = "Cheese Lovers", Price = 350, Description = "Three-cheese blend", ImageUrl = "images/cheese.jpg" }
-        };
+    private List<Pizza> order = new();
+
+    private void AddToOrder(Pizza pizza)
+    {
+        order.Add(pizza);
     }
 
-    private class Pizza
-    {
-        public string Name { get; set; } = "";
-        public decimal Price { get; set; }
-        public string Description { get; set; } = "";
-        public string ImageUrl { get; set; } = "";
-    }
+    public record Pizza(string Name, string ImageUrl, decimal Price, string Description);
 }

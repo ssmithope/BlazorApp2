@@ -87,5 +87,5 @@ c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\BlazorApp2.sourcel
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\scopedcss\Components\Pages\Menu.razor.rz.scp.css
 c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\scopedcss\Components\Pages\Order.razor.rz.scp.css
-c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\9y60nfedcw-{0}-yawrlx1p4c-yawrlx1p4c.gz
-c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\dqrlejl56i-{0}-yawrlx1p4c-yawrlx1p4c.gz
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\9y60nfedcw-{0}-yvo6k49kg3-yvo6k49kg3.gz
+c:\Users\Smith\blazor\BlazorApp2\BlazorApp2\obj\Debug\net11.0\compressed\dqrlejl56i-{0}-yvo6k49kg3-yvo6k49kg3.gz
